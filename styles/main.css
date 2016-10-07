@@ -57,8 +57,8 @@ SCROLLING NAVIGATION STLYES
   background-color: #9A254E;
   color: #D2A83D;
 }
-#slides {
-  overflow: visible;
+.slide {
+  min-width: 100%;
 }
 
 .slidesjs-pagination {
