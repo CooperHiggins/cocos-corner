@@ -115,7 +115,9 @@ SECTION STYLES
   font-size: 3.5em;
   padding-top: 50px;
 }
-
+.section {
+  padding-bottom: 150px;
+}
 .contact-section {
   background: #F9E6D8;
   text-align: left;
