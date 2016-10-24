@@ -1,9 +1,9 @@
-console.log('Cocos Corner');
+console.log('Welcome to Cocos Corner');
 
 $(document).ready(function(){
   $('.slides').slick({
     autoplay: true,
-    adaptiveHeight: false,
+    adaptiveHeight: true,
     arrows: false,
   });
 });

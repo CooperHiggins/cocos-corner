@@ -54,13 +54,33 @@ SCROLLING NAVIGATION STLYES
     color: #763844;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #9A254E;
-  color: #D2A83D;
+  background-color: transparent;
+  color: #B76538;
 }
-.slide {
-  min-width: 100%;
+.navbar-toggle {
+    border-color: #ddd;
+    margin: 6px 11px 16px 0px;
 }
 
+.navbar-default .navbar-toggle:hover {
+    background-color: #F9E6D8;
+}
+.navbar-default .navbar-toggle {
+    border-color: green;
+    margin: 3%;
+}
+
+/*
+SLIDE STYLES
+*/
+
+.slide {
+  min-width: 100%;
+  max-height: 828px;
+}
+.img-responsive .slide {
+  height: 100%;
+}
 .slidesjs-pagination {
     display: none;
 }
@@ -73,9 +93,15 @@ SCROLLING NAVIGATION STLYES
   top: 100px; 
 }
 .slick-slide {
-  max-height: 600px;
+  padding-top: 100px;
+  
   width: 100%;
 }
+
+/*
+SECTION STYLES
+*/
+
 .intro-header {
   font-size: 6.5em;
 }
@@ -86,20 +112,37 @@ SCROLLING NAVIGATION STLYES
 
 .section-header {
   float: left;
-  font-size: 3em;
+  font-size: 3.5em;
+  padding-top: 50px;
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #F9E6D8;
+  background: #F9E6D8;
+  text-align: left;
+  list-style-type: none;
+  height: initial;
+}
+ul.contact-list {
+    list-style: none;
+    font-size: 1.3em;
+    padding: 1%;
+}
+.about-section {
+  background-color: #F9E6D8;
+}
+/*
+MAP STYLES
+*/
+.map {  
+  padding: 10px;
 }
 
 footer {
   padding: 35px;
   background-color: #FFEDC7;
+  font-size: 1.2em;
 }
+
 @media (min-width: 1200px) {
 .container {
     width: 95%;
@@ -124,6 +167,23 @@ footer {
 .top-nav-collapse {
     padding-top: 0px;
   }
+  .navbar {
+    padding: 25px 120px;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+.navbar {
+     padding: 0px; 
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.slick-slide {
+    padding-top: 54px;
+    width: 100%;
+}
 }
 
 @media (min-width: 375px) {
@@ -140,14 +200,8 @@ footer {
     max-width: 5em;
 }
 
-.intro-paragraph {
-    font-size: 1em;
-
-}
-
-
-
 div#slides {
   overflow: visible;
 }
+
 }
