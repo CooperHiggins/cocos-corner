@@ -53,7 +53,7 @@ SCROLLING NAVIGATION STLYES
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #EED592;
+    color: #59132B;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: transparent;
@@ -68,18 +68,18 @@ SCROLLING NAVIGATION STLYES
     background-color: #F9E6D8;
 }
 .navbar-default .navbar-toggle {
-    border-color: green;
+    border-color: #989E60;
     margin: 3%;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #59132B;
 }
 
 /*
 SLIDE STYLES
 */
 
-.slide {
-  min-width: 100%;
-  max-height: 828px;
-}
+
 .img-responsive .slide {
   height: 100%;
 }
@@ -92,7 +92,7 @@ SLIDE STYLES
 }
 
 .slidesjs-container {
-  top: 100px; 
+   
 }
 .slick-slide {
   padding-top: 100px;
@@ -136,7 +136,7 @@ SECTION STYLES
 }
 ul.contact-list {
     list-style: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
     padding: 1%;
 }
 .about-section {
@@ -165,6 +165,10 @@ footer {
 #navbar-logo {
   max-width: 10em;
 }
+.slide {
+  min-width: 100%;
+  min-height: 600px;
+}
 }
 
 @media (min-width: 992px) {
@@ -174,6 +178,10 @@ footer {
 
 .intro-header {
   font-size: 6.5em;
+}
+.slide {
+  min-width: 100%;
+  min-height: 600px;
 }
 }
 
@@ -198,6 +206,10 @@ footer {
     padding-top: 54px;
     width: 100%;
 }
+.slide {
+  min-width: 100%;
+  min-height: 400px;
+}
 }
 
 @media (min-width: 375px) {
@@ -214,7 +226,10 @@ footer {
     display: block;
     max-width: 5em;
 }
-
+.slide {
+  min-width: 100%;
+  min-height: 200px;
+}
 div#slides {
   overflow: visible;
 }
