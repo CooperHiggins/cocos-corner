@@ -1,6 +1,6 @@
 body {
   background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Asul", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
@@ -38,8 +38,10 @@ SCROLLING NAVIGATION STLYES
 }
 
 .navbar-default {
-  background-color: #FBEBBF;
-  color: black;
+  /*background-color: #763844;*/
+  background-color: #FFEDC7;
+  color: #EED592;
+  font-family: 'Asul', sans-serif;
 }
 
 .navbar-brand {
@@ -51,7 +53,7 @@ SCROLLING NAVIGATION STLYES
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #763844;
+    color: #EED592;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: transparent;
@@ -59,7 +61,7 @@ SCROLLING NAVIGATION STLYES
 }
 .navbar-toggle {
     border-color: #ddd;
-    margin: 6px 11px 16px 0px;
+    /*margin: 6px 11px 16px 0px;*/
 }
 
 .navbar-default .navbar-toggle:hover {
@@ -104,22 +106,30 @@ SECTION STYLES
 
 .intro-header {
   font-size: 6.5em;
+  font-family: 'Tillana', cursive;
 }
 
 .intro-paragraph {
   font-size: 1.4em;
 }
-
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #F9E6D8;
+}
 .section-header {
   float: left;
-  font-size: 3.5em;
+  font-size: 6.5em;
   padding-top: 50px;
+  font-family: 'Tillana', cursive;
 }
 .section {
   padding-bottom: 150px;
+  background-color: #F9E6D8;
 }
 .contact-section {
-  background: #F9E6D8;
+  background: #FFEDC7;
   text-align: left;
   list-style-type: none;
   height: initial;
@@ -130,7 +140,7 @@ ul.contact-list {
     padding: 1%;
 }
 .about-section {
-  background-color: #F9E6D8;
+  background-color: #FFEDC7;
 }
 /*
 MAP STYLES
@@ -142,7 +152,9 @@ MAP STYLES
 footer {
   padding: 35px;
   background-color: #FFEDC7;
-  font-size: 1.2em;
+  background-color: #F9E6D8;
+  font-size: 1.2em; 
+  font-family: 'Asul', sans-serif;
 }
 
 @media (min-width: 1200px) {
@@ -191,6 +203,7 @@ footer {
 @media (min-width: 375px) {
   .navbar {
     max-width: 100%;
+    border: none;
   }
 
   .container {
