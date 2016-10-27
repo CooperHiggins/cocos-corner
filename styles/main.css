@@ -3,6 +3,10 @@ body {
   font-family: "Asul", Helvetica, Arial, sans-serif;
   color: #333;
 }
+@font-face {
+    font-family: Archer;
+    src: url(sansation_light.woff);
+}
 
 .hero-unit {
   margin: 50px auto 0 auto;
@@ -96,8 +100,21 @@ SLIDE STYLES
 }
 .slick-slide {
   padding-top: 100px;
-  
   width: 100%;
+}
+
+
+
+button.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+}
+
+.icon {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
 }
 
 /*
@@ -121,7 +138,7 @@ SECTION STYLES
 .section-header {
   float: left;
   font-size: 6.5em;
-  padding-top: 50px;
+  padding: 30px;
   font-family: 'Tillana', cursive;
 }
 .section {
@@ -141,6 +158,15 @@ ul.contact-list {
 }
 .about-section {
   background-color: #FFEDC7;
+  height: initial;
+}
+.about-image {
+    padding: 10px;
+    max-height: 400px;
+}
+.section-paragraph {
+  padding: 10px;
+  text-align: left;
 }
 /*
 MAP STYLES
@@ -190,7 +216,7 @@ footer {
     padding-top: 0px;
   }
   .navbar {
-    padding: 25px 120px;
+    padding: 15px 120px;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -228,7 +254,7 @@ footer {
 }
 .slide {
   min-width: 100%;
-  min-height: 200px;
+  min-height: 100%;
 }
 div#slides {
   overflow: visible;
