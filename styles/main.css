@@ -1,11 +1,15 @@
 body {
   background: #fafafa;
-  font-family: "Asul", Helvetica, Arial, sans-serif;
+  font-family: "archerbold", "langdon", Helvetica, Arial, sans-serif;
   color: #333;
 }
 @font-face {
-    font-family: Archer;
-    src: url(sansation_light.woff);
+    font-family: "archerbold";
+    src: url(archerbold.otf);
+}
+@font-face {
+    font-family: "langdon";
+    src: url(langdon.otf);
 }
 
 .hero-unit {
@@ -45,7 +49,7 @@ SCROLLING NAVIGATION STLYES
   /*background-color: #763844;*/
   background-color: #FFEDC7;
   color: #EED592;
-  font-family: 'Asul', sans-serif;
+  font-family: 'archerbold', sans-serif;
 }
 
 .navbar-brand {
@@ -123,23 +127,27 @@ SECTION STYLES
 
 .intro-header {
   font-size: 6.5em;
-  font-family: 'Tillana', cursive;
+  font-family: 'archerBold', cursive;
 }
 
 .intro-paragraph {
   font-size: 1.4em;
+  font-family: "langdon";
+    src: url(langdon.otf);
 }
 .intro-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #F9E6D8;
+    font-family: "archerbold";
+    src: url(archerbold.otf);
 }
 .section-header {
   float: left;
   font-size: 6.5em;
   padding: 30px;
-  font-family: 'Tillana', cursive;
+  font-family: "archerbold";
 }
 .section {
   padding-bottom: 150px;
@@ -165,6 +173,8 @@ ul.contact-list {
     max-height: 400px;
 }
 .section-paragraph {
+  font-family: "Langdon";
+  src: url(langdon.otf);
   padding: 10px;
   text-align: left;
   font-size: 1.5em;
@@ -181,7 +191,7 @@ footer {
   background-color: #FFEDC7;
   background-color: #F9E6D8;
   font-size: 1.2em; 
-  font-family: 'Asul', sans-serif;
+  font-family: 'archerbold', sans-serif;
 }
 
 @media (min-width: 1200px) {
@@ -216,18 +226,6 @@ footer {
 .top-nav-collapse {
     padding-top: 0px;
   }
-  .navbar {
-    padding: 15px 120px;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-}
-.navbar {
-     padding: 0px; 
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-}
 
 .slick-slide {
     padding-top: 54px;
@@ -236,6 +234,12 @@ footer {
 .slide {
   min-width: 100%;
   min-height: 400px;
+}
+.navbar {
+    padding: 25px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
 }
 }
 
