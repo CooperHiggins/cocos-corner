@@ -1,17 +1,27 @@
+html {
+  width: 100%;
+  }
+
 body {
   background: #fafafa;
   font-family: "archerbold", "langdon", Helvetica, Arial, sans-serif;
   color: #333;
 }
 @font-face {
-    font-family: "archerbold";
-    src: url(archerbold.otf);
+  font-family: "archerbold";
+  src: url(archerbold.otf);
 }
 @font-face {
-    font-family: "langdon";
-    src: url(langdon.otf);
+  font-family: "langdon";
+  src: url(langdon.otf);
 }
-
+span.glyphicon.glyphicon-arrow-down {
+  color: black;
+}
+span.glyphicon.glyphicon-arrow-down:hover {
+  padding: 10px;
+  color: black;
+}
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -42,12 +52,14 @@ SCROLLING NAVIGATION STLYES
 
 .nav.navbar-nav {
   padding-top: 30px;
-  font-size: 2em; 
+  font-size: 2.5em; 
 }
 
 .navbar-default {
   /*background-color: #763844;*/
-  background-color: #FFEDC7;
+  /*background-color: #FFEDC7;*/
+  border: transparent;
+  background-color: #FBBE86;
   color: #EED592;
   font-family: 'archerbold', sans-serif;
 }
@@ -65,7 +77,7 @@ SCROLLING NAVIGATION STLYES
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: transparent;
-  color: #B76538;
+  color: #59132B;
 }
 .navbar-toggle {
     border-color: #ddd;
@@ -87,9 +99,8 @@ SCROLLING NAVIGATION STLYES
 SLIDE STYLES
 */
 
-
 .img-responsive .slide {
-  height: 100%;
+  height: ;
 }
 .slidesjs-pagination {
     display: none;
@@ -100,15 +111,17 @@ SLIDE STYLES
 }
 
 .slidesjs-container {
+  
    
 }
 .slick-slide {
-  padding-top: 100px;
-  width: 100%;
 }
 
-
-
+.slick-slide img {
+  margin-top: 73px;
+  width: inherit;
+    
+}
 button.btn {
   background-color: transparent;
   border: none;
@@ -124,60 +137,93 @@ button.btn {
 /*
 SECTION STYLES
 */
-
+th {
+  text-align: left;
+  border: solid;
+}
+tr {
+  border: solid;
+  padding: 10px;
+}
+td, th {
+  padding: 15px;
+  border: solid;
+}
+table {
+  border: solid;
+}
+h1.intro-header.maroon {
+  color: #59132B;
+  font-size: 9em;
+}
+h1.section-header.gold {
+  color: #D5AD46;
+}
 .intro-header {
   font-size: 6.5em;
   font-family: 'archerBold', cursive;
 }
-
 .intro-paragraph {
-  font-size: 1.4em;
+  font-size: 2em;
   font-family: "langdon";
-    src: url(langdon.otf);
+  
 }
 .intro-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #F9E6D8;
-    font-family: "archerbold";
-    src: url(archerbold.otf);
+  text-align: center;
+  background: #F9E6D8;
+  font-family: "archerbold";
+}
+.services-section { 
+  text-align: center;
+  background: #fff;
 }
 .section-header {
   float: left;
   font-size: 6.5em;
-  padding: 30px;
   font-family: "archerbold";
+  padding-bottom: 0.2em
 }
 .section {
-  padding-bottom: 150px;
-  background-color: #F9E6D8;
+  background-color: #FFEDC7;
+  padding-top: 105px;
+  min-width: 680px;
 }
 .contact-section {
   background: #FFEDC7;
   text-align: left;
   list-style-type: none;
-  height: initial;
+  padding-bottom: 50px;
 }
 ul.contact-list {
-    list-style: none;
-    font-size: 1.5em;
-    padding: 1%;
+  list-style: none;
+  font-size: 2em;
+  padding: 1%;
 }
 .about-section {
   background-color: #FFEDC7;
-  height: initial;
 }
-.about-image {
-    padding: 10px;
-    max-height: 400px;
+.container.section {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .section-paragraph {
   font-family: "Langdon";
   src: url(langdon.otf);
-  padding: 10px;
   text-align: left;
-  font-size: 1.5em;
+  font-size: 2em;
+  padding-bottom: 50px;
+}
+/*
+IMAGE STYLES
+*/
+.about-image {
+  padding: 10px;
+  max-height: 500px;
+}
+.doughnut-image {
+  margin-left: 70px;
+  padding: 15px;
+  max-width: 30em;
 }
 /*
 MAP STYLES
@@ -185,7 +231,9 @@ MAP STYLES
 .map {  
   padding: 10px;
 }
-
+/*
+FOOTER STYLES
+*/
 footer {
   padding: 35px;
   background-color: #FFEDC7;
@@ -194,75 +242,68 @@ footer {
   font-family: 'archerbold', sans-serif;
 }
 
-@media (min-width: 1200px) {
-.container {
-    width: 95%;
-}
 
-#navbar-logo {
-  max-width: 10em;
-}
-.slide {
-  min-width: 100%;
-  min-height: 600px;
-}
+@media (min-width: 1200px) {
+
+  #navbar-logo {
+   max-width: 10em;
+   margin-left: 25px;
+   font-size: 1.3em;
+  }
+
+  span.glyphicon.glyphicon-arrow-down {
+    padding-top: 20px;
+  }
+  .glyphicon-arrow-down:before {
+    content: "\e094";
+    font-size: 3em;
+  }
 }
 
 @media (min-width: 992px) {
-.main-container {
-    width: 95%;
-}
-
-.intro-header {
-  font-size: 6.5em;
-}
-.slide {
-  min-width: 100%;
-  min-height: 600px;
-}
-}
-
-@media (max-width: 767px) {
-.top-nav-collapse {
-    padding-top: 0px;
+  .intro-header {
+    font-size: 6.5em;
   }
 
-.slick-slide {
-    padding-top: 54px;
-    width: 100%;
-}
-.slide {
-  min-width: 100%;
-  min-height: 400px;
-}
-.navbar {
-    padding: 25px 0;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-}
 }
 
-@media (min-width: 375px) {
+@media (min-width: 767px) {
+
+  #navbar-logo {
+   max-width: 9.5em;
+  }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  html {
+    min-width: 660px;
+  }
+
   .navbar {
-    max-width: 100%;
     border: none;
   }
-
-  .container {
-    max-width: 100%
+  .secton-paragraph {
+    padding-top: 40px;
+  }
+    .navbar-brand>img {
+    display: block;
+    
+    margin-left: 25px;
   }
 
-  .navbar-brand>img {
-    display: block;
-    max-width: 5em;
+  #navbar-logo {
+    max-width: 8em;
+  }
+
+  .section {
+    min-width: 660px;
+    background-color: #F9E6D8;
+  }
+  .slides.slick-initialized.slick-slider {
+    min-width: 630px;
 }
-.slide {
-  min-width: 100%;
-  min-height: 100%;
-}
-div#slides {
-  overflow: visible;
 }
 
-}
+

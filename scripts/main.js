@@ -5,5 +5,6 @@ $(document).ready(function(){
     autoplay: true,
     adaptiveHeight: true,
     arrows: false,
+     mobileFirst: true,
   });
 });
